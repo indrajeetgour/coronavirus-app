@@ -20,7 +20,7 @@ steps:
 
 - task: Maven@3
   inputs:
-    mavenPomFile: 'coronavirus-app/pom.xml'
+    mavenPomFile: 'pom.xml'
     goals: 'clean package'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
